@@ -1,0 +1,335 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+/* HEADER */
+.imagen-promo img{
+    width: 100%;
+   display: none;
+}
+
+header ul{
+display: none;
+}
+
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    min-width: 200px;
+    padding: 10px;
+}
+
+header{
+    background-color: #EAC926;;
+}
+
+.busqueda{ 
+    width: 15vw;
+    height: 36px;
+    background-color: #FFF;
+    border: none;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    overflow: hidden;
+    max-height: 30px;
+    margin-left: 30px;
+    padding-left: 15px;
+    border-radius: 4px;
+}
+
+header nav{
+    font-size: 15px;
+}
+
+.header{
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-formulario{
+    display: flex;
+    align-items: center;
+}
+
+.burguer-menu{
+    background-color: #1259c3;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 22px;
+    padding: 6px 0;
+    max-width: 44px;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+/* MAIN */
+.descripcion{
+    text-align: center;
+}
+
+li{
+    font-size: 12px;
+}
+
+.price{
+    font-size: 18px;
+    display: inline-block;
+}
+
+.descuentos{
+    font-size: 16px;
+    display: inline-block;
+}
+
+footer{
+    margin-top: 80px;
+}
+
+main{
+    margin: 0;
+    width: 90%;
+}
+
+.articulo{
+    border-top: 1px solid #ebebeb;
+    box-sizing: border-box;
+    margin: 10px;
+    position: relative
+}
+
+.card{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.imagen{
+    width: 100%;
+}
+
+
+.cabecera{
+   display:flex
+   
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top:-15px;
+    }
+
+
+i{
+    size: 2em;
+    margin-bottom: 10px;
+}
+
+
+
+.productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+
+
+.descuentos{
+    color: green;
+}
+
+h4{
+    display: none;
+}
+
+.bloque-main{
+    padding-left: 10px; ;
+}
+
+/* FOOTER */
+.data{
+    text-align: center;
+}
+
+.data i{
+    font-size: 30px;
+    color: #1259c3 ;
+}
+
+.data:hover{
+    font-weight:bold;
+}
+
+/* REGISTER */
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 1px;
+}
+
+.register input{
+    width: 300px;
+}
+
+.register input:focus{
+    border-radius: 4px;
+    border: 1px solid #39b54a
+}
+
+.register label{
+    font-weight: bold;
+}
+
+.select{
+    display: inline-block
+}
+
+.myButton {
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+    margin-top: 20px;
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.copyright{
+    border-top: 1px solid #ebebeb;
+}
+
+/*--------------- VISTA TABLET --------------*/
+
+@media (min-width: 426px){
+.card:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+h4{
+    display: block;
+    visibility: hidden;
+}
+
+.card:hover h4{
+    visibility: visible;
+}
+
+main section article i{
+    transition: 1s;
+}
+
+.card:hover i{
+transform: rotate(-90deg);
+}
+
+.card{
+    width: 45%;
+}
+
+.burguer-menu{
+    display: none;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 0.15
+};
+      
+header ul li{
+        list-style-type: none;
+    }
+
+    
+header ul li a{
+        text-decoration: none;
+        color: black;
+    }
+
+
+.selectores{
+display: flex;
+justify-content: space-between;
+}
+
+.header{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.imagen-promo img{
+    display: block;
+    width: 100%;
+}
+}
+
+/*--------------- VISTA COMPUTADORA --------------*/
+
+@media (min-width: 769px){
+    .card{
+        width: 24%;
+    }
+
+.data{
+    width: 95%;
+    margin: auto;
+}
+
+}
